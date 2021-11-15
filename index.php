@@ -31,9 +31,9 @@ require 'conn.php';
                     <td><?php echo $row->nama_pelajar; ?></td>
                     <td><?php echo $row->kp_pelajar; ?></td>
                     <td>
-                        <a href="kemaskini.php?idmakanan=<?php echo $row->idmakanan; ?>">Edit</a>
+                        <a href="kemaskini.php?id_pelajar=<?php echo $row->id_pelajar; ?>">Edit</a>
                         |
-                        <a href="padam.php?idmakanan=<?php echo $row->idmakanan; ?>" onclick="return confirm('Betul ke nak padam?');">Padam</a>
+                        <a href="padam.php?id_pelajar=<?php echo $row->id_pelajar; ?>" onclick="return confirm('Betul ke nak padam?');">Padam</a>
                     </td>
                 </tr>
         <?php

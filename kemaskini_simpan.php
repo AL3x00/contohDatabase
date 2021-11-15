@@ -1,9 +1,9 @@
 <?php
 require 'conn.php';
 
-$idmakanan = $_POST['idmakanan'];
-$nama = $_POST['nama'];
-$harga = $_POST['harga'];
+$id_pelajar = $_POST['id_pelajar'];
+$nama_pelajar = $_POST['nama_pelajar'];
+$kp_pelajar = $_POST['kp_pelajar'];
 
 $sql = "UPDATE makanan SET nama = ?, harga = ? WHERE idmakanan = ?";
 $stmt = $mysqli->prepare($sql);
