@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 15, 2021 at 04:31 AM
+-- Generation Time: Nov 15, 2021 at 05:34 AM
 -- Server version: 10.4.19-MariaDB
 -- PHP Version: 7.4.19
 
@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `tbl_pelajar` (
-  `no_pelajar` int(100) NOT NULL,
+  `id_pelajar` int(100) NOT NULL,
   `nama_pelajar` varchar(50) NOT NULL,
   `kp_pelajar` varchar(15) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -37,7 +37,7 @@ CREATE TABLE `tbl_pelajar` (
 -- Dumping data for table `tbl_pelajar`
 --
 
-INSERT INTO `tbl_pelajar` (`no_pelajar`, `nama_pelajar`, `kp_pelajar`) VALUES
+INSERT INTO `tbl_pelajar` (`id_pelajar`, `nama_pelajar`, `kp_pelajar`) VALUES
 (1, 'ALI', '011231028754'),
 (2, 'ABU', '010723025732'),
 (3, 'LEE', '010222021234'),
@@ -57,7 +57,7 @@ INSERT INTO `tbl_pelajar` (`no_pelajar`, `nama_pelajar`, `kp_pelajar`) VALUES
 -- Indexes for table `tbl_pelajar`
 --
 ALTER TABLE `tbl_pelajar`
-  ADD PRIMARY KEY (`no_pelajar`),
+  ADD PRIMARY KEY (`id_pelajar`),
   ADD UNIQUE KEY `kp_pelajar` (`kp_pelajar`),
   ADD UNIQUE KEY `kp_pelajar_2` (`kp_pelajar`);
 
@@ -69,7 +69,7 @@ ALTER TABLE `tbl_pelajar`
 -- AUTO_INCREMENT for table `tbl_pelajar`
 --
 ALTER TABLE `tbl_pelajar`
-  MODIFY `no_pelajar` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id_pelajar` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
