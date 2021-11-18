@@ -1,21 +1,21 @@
 <?php
 require 'conn.php';
 
-$nama = $_POST['nama'];
-$harga = $_POST['harga'];
+$nama_pelajar = $_POST['nama_pelajar'];
+$kp_pelajar = $_POST['kp_pelajar'];
 
-$sql = "INSERT INTO makanan (nama, harga) VALUES (?, ?)";
-$stmt = $mysqli->prepare($sql);
-$stmt->bind_param('sd', $nama, $harga);
+$sql = "INSERT INTO tbl_pelajar (nama_pelajar, kp_pelajar) VALUES (?, ?)";
+$stmt = $conn->prepare($sql);
+$stmt->bind_param('ss', $nama_pelajar, $kp_pelajar);
 $stmt->execute();
 
-if ($mysqli->error) {
-    ?>
+if ($conn->error) {
+?>
     <script>
-        alert('Maaf! Nama makanan tersebut sudah wujud dalam senarai');
+        alert('Maaf! Nama pelajar tersebut sudah wujud dalam senarai');
         window.location = 'index.php';
     </script>
-    <?php
+<?php
     exit;
 } else {
     header('location: index.php');

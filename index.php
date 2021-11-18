@@ -9,7 +9,7 @@ require 'conn.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Senarai Pelajar</title>
 </head>
 
 <body>
@@ -33,7 +33,7 @@ require 'conn.php';
                     <td>
                         <a href="kemaskini.php?id_pelajar=<?php echo $row->id_pelajar; ?>">Edit</a>
                         |
-                        <a href="padam.php?id_pelajar=<?php echo $row->id_pelajar; ?>" onclick="return confirm('Betul ke nak padam?');">Padam</a>
+                        <a href="padam.php?id_pelajar=<?php echo $row->id_pelajar; ?>" onclick="return confirm('Betul ke nak padam?');">Delete</a>
                     </td>
                 </tr>
         <?php
@@ -41,6 +41,7 @@ require 'conn.php';
         }
         ?>
     </table>
+    <a href="tambah.php">Add</a>
 </body>
 
 </html>
