@@ -13,6 +13,7 @@ require 'conn.php';
 </head>
 
 <body>
+    <a href="tambah.php">Add</a>
     <table border="1" cellpadding="8" cellspacing="0">
         <tr bgcolor="#ffd700">
             <th>Bil</th>
@@ -41,7 +42,6 @@ require 'conn.php';
         }
         ?>
     </table>
-    <a href="tambah.php">Add</a>
 </body>
 
 </html>
