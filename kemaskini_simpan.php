@@ -3,6 +3,7 @@ require 'conn.php';
 
 $id_pelajar = $_POST['id_pelajar'];
 $nama_pelajar = $_POST['nama_pelajar'];
+$nama_pelajar = strtoupper($nama_pelajar);
 $kp_pelajar = $_POST['kp_pelajar'];
 
 $sql = "UPDATE tbl_pelajar SET nama_pelajar = ?, kp_pelajar = ? WHERE id_pelajar = ?";

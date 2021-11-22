@@ -2,6 +2,7 @@
 require 'conn.php';
 
 $nama_pelajar = $_POST['nama_pelajar'];
+$nama_pelajar = strtoupper($nama_pelajar);
 $kp_pelajar = $_POST['kp_pelajar'];
 
 $sql = "INSERT INTO tbl_pelajar (nama_pelajar, kp_pelajar) VALUES (?, ?)";
